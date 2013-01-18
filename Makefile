@@ -17,7 +17,8 @@ pdf:
 
 odt:
 	for o in $(out); do \
-	  rst2odt $${o}.rst build/$${o}.odt; \
+	  rst2odt --stylesheet=$(pwd)/styles.odt.d/styles.odt \
+	          $${o}.rst build/$${o}.odt;\
 	done
 
 clean:
