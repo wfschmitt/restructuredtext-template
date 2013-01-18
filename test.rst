@@ -16,9 +16,9 @@
 子セクション2
 ---------------
 
-.. figure:: images/example.png
+.. figure:: Images/example.png
     :alt: example
-    :scale: 75%
+    :scale: 30%
 
     キャプション
 
