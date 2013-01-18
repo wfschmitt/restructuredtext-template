@@ -1,0 +1,18 @@
+{
+    "embeddedFonts" : [["ipam.ttf", "ipagp.ttf", "ipamp.ttf", "ipag.ttf"]],
+    "fontsAlias" : {
+        "stdFont"      : "IPAPMincho",
+        "stdBold"      : "IPAPMincho",
+        "stdItalic"    : "IPAPMincho",
+        "stdBoldItalic": "IPAPMincho",
+        "stdMono"      : "IPAGothic" 
+    },
+    "styles" : {
+        "base" : {
+            "wordWrap" : "CJK"
+        },
+        "literal" : {
+            "wordWrap" : "None"
+        }
+    }
+}
