@@ -17,7 +17,9 @@ pdf:
 
 odt:
 	for o in $(out); do \
-	  rst2odt --stylesheet=$(pwd)/styles.odt.d/styles.odt \
+	  rst2odt.py --stylesheet=$(pwd)/styles.odt.d/styles.odt \
+	             --config=$(pwd)/styles.odt.d/mapping.conf \
+	             --generate-oowriter-toc \
 	          $${o}.rst build/$${o}.odt;\
 	done
 

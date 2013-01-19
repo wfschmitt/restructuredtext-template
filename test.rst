@@ -1,5 +1,9 @@
 .. sectnum::
 
+.. role:: test(literal)
+
+.. header:: ok
+
 セクション1
 ================
 
@@ -32,5 +36,25 @@
 子セクション2
 ---------------
 
+.. code::
 
-.. vim: set expandtab tabstop=4 shiftwidth=4 :
+    | test*dd*
+    ``
+
+
+
+.. container:: terminalblock
+
+    :test:`# ok
+            dfdfd
+            `
+
+.. parsed-literal::
+    :class: rststyle-terminalblock
+
+    test*ggg*
+    fddfd
+
+.. include:: tmp.py
+    :literal:
+
