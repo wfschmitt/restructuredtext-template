@@ -3,15 +3,15 @@
         "size" : "A4",
         "margin-top" : "1cm",
         "margin-bottom" : "1cm",
-        "margin-left" : "1cm",
-        "margin-right" : "1cm",
+        "margin-left" : "2cm",
+        "margin-right" : "2cm",
         "spacing-header" : "5mm",
         "spacing-footer" : "5mm"
     },
     "styles" : {
         "base" : {
-            "fontSize" : 9,
-            "bulletFontSize" : 9
+            "fontSize" : 10,
+            "bulletFontSize" : 10
         },
         "heading" : {
             "spaceBefore" : 8,
@@ -19,37 +19,104 @@
         },
         "title" : {
             "fontSize" : "180%",
-            "spaceAfter" : 5
+            "spaceAfter" : 5,
+            "alignment" : "left"
         },
         "subtitle" : {
             "fontSize" : "140%",
-            "spaceBefore" : 0
+            "spaceBefore" : 0,
+            "alignment" : "left"
         },
         "heading1" : {
-            "fontSize" : "130%"
+            "fontSize" : "180%"
         },
         "heading2" : {
-            "fontSize" : "120%"
+            "fontSize" : "140%"
         },
         "heading3" : {
-            "fontSize" : "110%"
+            "fontSize" : "130%"
+        },
+        "heading4" : {
+            "fontSize" : "120%"
         },
         "bodytext" : {
-            "spaceBefore" : 0
+            "spaceBefore" : 6
         },
         "bullet-list" : {
             "commands" : [
                 ["VALIGN", [0,0], [-1,-1], "TOP"],
+                ["TOPPADDING", [0,0], [-1,-1], 8],
+                ["BOTTOMPADDING", [0,0], [-1,-1], 16],
                 ["RIGHTPADDING", [0,0], [-1,-1], 0],
-                ["LEFTPADDING", [0,0], [-1,-1], 5],
-                ["BOTTOMPADDING", [0,0], [-1,-1], 0],
-                ["TOPPADDING", [0,0], [-1,-1], 0]
+                ["LEFTPADDING", [0,0], [-1,-1], 5]
                 ],
-            "colWidths" : [5,null],
+            "colWidths" : [30,null],
             "spaceBefore" : 0,
-            "spaceAfter" : 0
+            "spaceAfter" : 8
         },
-        "bullet-list-item" : { "spaceBefore" : 3 }
+        "item-list" : {
+            "commands" : [
+                ["VALIGN", [0,0], [-1,-1], "TOP"],
+                ["TOPPADDING", [0,0], [-1,-1], 8],
+                ["BOTTOMPADDING", [0,0], [-1,-1], 16]
+                ],
+            "colWidths" : [30,null],
+            "spaceBefore" : 0,
+            "spaceAfter" : 8
+        },
+        "code" : {
+            "fontSize" : 85%
+        },
+        "definition-list-term" : {
+            "fontSize" : 115%
+        },
+        "table-title" : {
+            "fontSize" : 11
+        },
+        "table-heading" : {
+            "fontSize" : 8.5
+        },
+        "table-body" : {
+            "fontSize" : 8.5
+        },
+        "lineblock" : {
+            backColor : "lightgrey"
+        },
+
+        "headertable" : {
+            "commands" : [
+                [ "GRID", [ 0, 0 ], [ -1, -1 ], 0, "white" ]
+                ]
+        },
+        "footertable" : {
+            "commands" : [
+                [ "GRID", [ 0, 0 ], [ -1, -1 ], 0, "white" ]
+                ]
+        },
+        "top-logo" : {
+            "commands" : [
+                ["VALIGN", [0,0], [-1,-1], "TOP"],
+                ["ALIGN", [0,0], [-1,-1], "CENTER"],
+                ["RIGHTPADDING", [0,0], [-1,-1], 0],
+                ["LEFTPADDING", [0,0], [-1,-1], 0],
+                ["BOTTOMPADDING", [0,0], [-1,-1], 150],
+                ["TOPPADDING", [0,0], [-1,-1], 150]
+                ],
+                "colWidths": [100%, null]
+        },
+        "terminal-block" : {
+            parent: "literal",
+            backColor : "lightgrey",
+            borderColor : "darkgrey",
+            borderWidth : 0.5,
+            borderPadding : 6,
+            spaceBefore : 6,
+            spaceAfter : 8
+        },
+        "small" : {
+            "parent" : "normal",
+            "fontSize" : 85%
+        }
     }
 }
 

@@ -36,25 +36,4 @@
 子セクション2
 ---------------
 
-.. code::
-
-    | test*dd*
-    ``
-
-
-
-.. container:: terminalblock
-
-    :test:`# ok
-            dfdfd
-            `
-
-.. parsed-literal::
-    :class: rststyle-terminalblock
-
-    test*ggg*
-    fddfd
-
-.. include:: tmp.py
-    :literal:
-
+ok
