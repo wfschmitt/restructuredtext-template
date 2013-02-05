@@ -1,0 +1,41 @@
+* {
+    font-size: 16px;
+}
+
+.topic-title {
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 3px;
+    border: 2px solid;
+    box-shadow: -3px 4px 0px 0px #777;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3px;
+    border-left: 2px solid #666;
+    border-bottom: 3px solid #666;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 3px;
+    border-left: 12px double #888;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 3px;
+}
+
