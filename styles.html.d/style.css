@@ -16,6 +16,7 @@ h1 {
     padding: 3px;
     border: 2px solid;
     box-shadow: -3px 4px 0px 0px #777;
+    page-break-before: always;
 }
 
 h2 {
