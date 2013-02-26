@@ -25,9 +25,10 @@ odt:
 	done
 
 html: clean-html
-	[ -d Images ] && ln -sf "../Images" build-html/Images || :
+	[ -d images ] && ln -sf "../images" build-html/images || :
 	[ -d includes ] && ln -sf "../includes" build-html/includes || :
-	[ -d styles.html.d ] && ln -sf "../styles.html.d" build-html/css || :
+	# we emebed styles
+	#[ -d styles.html.d ] && ln -sf "../styles.html.d" build-html/css || :
 	for o in $(out); do \
 		ln -sf "../$${o}.rst" build-html/$${o}.rst; \
 		rst2html --no-generator \
@@ -47,7 +48,14 @@ html2pdf: html
 	for o in $(out); do \
 		$(wkhtmltopdf) toc \
 			--footer-right [page] \
-			--footer-left [title] \
+			--footer-left [section] \
+			--footer-font-size 9 \
+			--footer-line \
+			--footer-spacing 5 \
+			--margin-top 20mm \
+			--margin-bottom 20mm \
+			--margin-left 20mm \
+			--margin-right 20mm \
 			build-html/$${o}.html build/$${o}.html.pdf
 	done
 
