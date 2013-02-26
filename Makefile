@@ -46,7 +46,7 @@ html: clean-html
 
 html2pdf: html
 	for o in $(out); do \
-		$(wkhtmltopdf) toc \
+		$(wkhtmltopdf) \
 			--footer-right [page] \
 			--footer-left [section] \
 			--footer-font-size 9 \
@@ -56,7 +56,7 @@ html2pdf: html
 			--margin-bottom 20mm \
 			--margin-left 20mm \
 			--margin-right 20mm \
-			build-html/$${o}.html build/$${o}.html.pdf
+			build-html/$${o}.html build/$${o}.html.pdf; \
 	done
 
 
