@@ -1,9 +1,11 @@
 * {
     font-size: 16px;
+    max-width: 18cm;
 }
 
 .topic-title {
     font-size: 2em;
+    page-break-before: always;
 }
 
 a {
@@ -19,12 +21,28 @@ h1 {
     page-break-before: always;
 }
 
+h1.title {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 3px;
+    border: none;
+    box-shadow: none;
+    page-break-before: avoid;
+}
+
 h2 {
     font-size: 1.5em;
     font-weight: bold;
     padding: 3px;
     border-left: 2px solid #666;
     border-bottom: 3px solid #666;
+}
+
+h2.subtitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 3px;
+    border: none;
 }
 
 h3 {
@@ -40,3 +58,49 @@ h4 {
     padding: 3px;
 }
 
+dl {
+    overflow: hidden;
+    position: relative;
+    background-color: #FFC;
+}
+
+dt {
+    float: left;
+    width: 5cm;
+    clear: both;
+    padding: 3px 20px 4px 0;
+    padding-bottom: 15px;
+    margin-right: -1px;
+    position: relative;
+}
+
+dd {
+    padding:3px 0 15px 20px;
+    margin-left: 5.1cm;
+}
+
+pre {
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.literal-block {
+    border: 1px solid;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+.terminal-block {
+    background-color: #CCC;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure {
+    text-align: center;
+}
